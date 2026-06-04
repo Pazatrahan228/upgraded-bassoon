@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: "Cormorant Garamond";
+  --font-sans: "Inter";
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  min-height: 100vh;
+  background: #fbf6ea;
+  color: #26231f;
+}
+
+@layer components {
+  .premium-card { @apply rounded-[28px] border border-white/70 bg-white/75 shadow-card backdrop-blur-xl; }
+  .gold-button { @apply rounded-full bg-charcoal px-5 py-3 text-sm font-semibold text-white shadow-card transition hover:-translate-y-0.5 hover:bg-[#141210]; }
+  .ghost-button { @apply rounded-full border border-champagne/35 bg-white/70 px-4 py-2 text-sm font-semibold text-charcoal transition hover:border-champagne hover:bg-white; }
+  .status-pill { @apply inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold; }
+  .section-title { @apply font-serif text-3xl font-semibold tracking-tight text-charcoal; }
+}
+
+.dsd-grid-bg {
+  background-image: linear-gradient(rgba(201,164,92,.10) 1px, transparent 1px), linear-gradient(90deg, rgba(201,164,92,.10) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.print-page { background: white; }
+@media print {
+  body { background: white; }
+  .no-print { display: none !important; }
+  .print-page { box-shadow: none !important; border: none !important; margin: 0 !important; }
+}
