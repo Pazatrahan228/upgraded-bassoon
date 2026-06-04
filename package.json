@@ -1,0 +1,13 @@
+{
+  "name": "fresh-vibes-dsd-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:open": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/dev.mjs",
+    "lint": "node scripts/lint.mjs"
+  }
+}
