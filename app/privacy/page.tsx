@@ -1,0 +1,1 @@
+export default function Page(){return <main className="section"><div className="container max-w-3xl"><h1 className="serif text-5xl">privacy</h1><p className="mt-6 text-[#756b66]">TODO: doplnit právní text schválený provozovatelem kliniky před spuštěním.</p></div></main>}

@@ -1,0 +1,3 @@
+import type { Metadata } from 'next';import { ServicesList } from '@/components/ui';
+export const metadata:Metadata={title:'Služby',description:'Estetická stomatologie, bělení zubů, fazety, implantologie, ortodoncie a první návštěva ve Fresh Vibes Praha.',alternates:{canonical:'/services'}};
+export default function Page(){return <main className="section"><div className="container grid gap-10 md:grid-cols-[.7fr_1.3fr]"><div><p className="eyebrow">Fresh Vibes</p><h1 className="serif mt-3 text-6xl">Služby</h1><p className="mt-5 text-[#756b66]">Ceny a vhodnost ošetření stanovíme až po konzultaci a diagnostice.</p></div><ServicesList/></div></main>}
